@@ -67,7 +67,7 @@ gcloud compute instances create worker-1-server \
     --maintenance-policy=MIGRATE \
     --provisioning-model=STANDARD \
     --tags=http-server \
-    --create-disk=auto-delete=yes,boot=yes,device-name=worker-1-server,image=projects/debian-cloud/global/images/debian-12-bookworm-v20250110,mode=rw,size=10,type=pd-balanced \
+    --create-disk=auto-delete=yes,boot=yes,device-name=worker-1-server,image-family=debian-12,image-project=debian-cloud,mode=rw,size=10,type=pd-balanced \
     --no-shielded-secure-boot \
     --shielded-vtpm \
     --shielded-integrity-monitoring \
@@ -98,7 +98,7 @@ gcloud compute instances create worker-2-server \
     --maintenance-policy=MIGRATE \
     --provisioning-model=STANDARD \
     --tags=http-server \
-    --create-disk=auto-delete=yes,boot=yes,device-name=worker-2-server,image=projects/debian-cloud/global/images/debian-12-bookworm-v20250110,mode=rw,size=10,type=pd-balanced \
+    --create-disk=auto-delete=yes,boot=yes,device-name=worker-2-server,image-family=debian-12,image-project=debian-cloud,mode=rw,size=10,type=pd-balanced \
     --no-shielded-secure-boot \
     --shielded-vtpm \
     --shielded-integrity-monitoring \
