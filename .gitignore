@@ -1,0 +1,12 @@
+# Ignore unnecessary files
+*.swp
+*.swo
+*~
+.DS_Store
+*.log
+email-channel.json
+frontend-group.json
+dashboard-config.json
+uptime-check.json
+
+# Keep only essential lab files
